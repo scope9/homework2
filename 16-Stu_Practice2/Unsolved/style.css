@@ -1,0 +1,179 @@
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+   
+
+}
+   
+   body {
+       height: 100vh;
+   }
+   
+   .box {
+
+    height: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+    
+
+       
+   }
+   
+   .mobile {  /*main not working */
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+
+    "a"
+    "b c"
+    "d e";
+
+    grid-gap: 3px;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+
+    
+    
+
+
+    
+    
+   }
+
+
+   .k , .l , .m, .n , .o , .p , .q {
+
+    display: none;
+   }
+
+.a {
+    grid-column: span 2;  /*What about grid-column: span 2/2 */
+    grid-row: span 1;
+    
+}
+
+/* .b, .c, .d, .e, .f, .g , .h, .i, .j, {
+
+
+} */
+
+
+/* .other {
+    display: none;
+} */
+
+
+img {
+    width: 200px;
+    height:100px;
+}
+
+
+ @media only screen and (min-width: 600px) { 
+
+    main {
+      
+      display: grid;
+      grid-gap:5px;
+      grid-template-columns: repeat (6, 1fr);
+      grid-template-rows: repeat (4,1fr);
+      height: 100%;
+
+    }
+
+       /* grid-row: span 1;
+    grid-column: span 1; */
+    
+
+    .box {
+
+        height: 100%;
+        grid-column: span 1;
+        grid-row: span 1;
+    
+    
+    
+     }
+/* .other {
+    height: 100%;
+    display: contents;
+    ;
+} */
+
+
+ 
+
+ .k , .l , .m , .n , .o , .p , .q {
+
+    display: contents;
+  
+}
+
+/* img {
+    height: 50px;
+    width: 50px;
+} */
+
+ }
+
+
+ /* .a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+.f {
+    grid-area: f;
+}
+.g {
+    grid-area: g;
+}
+.h {
+    grid-area: h;
+}
+.i {
+    grid-area: i;
+}
+.j {
+    grid-area: j;
+}
+.k {
+    grid-area: k;
+}
+.l {
+    grid-area: l;
+}
+.a {
+    grid-area: a;
+}
+.m {
+    grid-area: m;
+}
+.n {
+    grid-area: n;
+}
+.o {
+    grid-area: o;
+}
+.p {
+    grid-area: p;
+}
+
+.q {
+    grid-area: q;
+} */
